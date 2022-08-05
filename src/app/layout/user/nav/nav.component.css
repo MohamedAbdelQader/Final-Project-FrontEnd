@@ -1,0 +1,122 @@
+
+  nav  .logonav{
+    max-width: 7rem;   
+    left: 2rem;
+    top: 0rem;
+  }
+  nav .ul {
+   margin-left: 2rem;  
+  }
+
+nav .ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  transition: linear;
+  width: 150px;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.ournav{
+  background-color: #182525;
+  border: 5px solid #182525;
+  width: 100vw;
+  display: flex;
+}
+nav .ul li a:hover {
+  background-color: white;
+  color: #182525;
+  /* border-bottom: 0.1rem solid #000d21; */
+  transition: all 0.2s;
+  /* box-shadow: #fff 0.2rem 0.1rem 0.9rem 0.1rem; */
+  border-radius: 1rem;
+  transition: all 0.7s;
+} 
+ /* .active {
+  color: #0d0043;
+  border-bottom: 0.1rem solid #003b42;
+} */
+form{
+ /* margin-right: auto; */
+ display: flex;
+ /* justify-content: space-between; */
+ width: 10vw;
+ margin-right: 3rem;
+}
+
+/* form a{
+  padding: 15px;
+} */
+.carticon 
+{
+    font-size: 30px;
+    color: white;
+    /* margin-left: 0.7rem; */
+}
+
+.hearticon 
+{
+    
+  font-size: 30px;
+  color: white;
+
+} 
+
+.badge
+{
+    font-size: 10px;
+    /* margin-top: 15px; */
+}
+.usericon{
+  text-decoration: none !important;
+  color: #182525 ;
+  text-align: center !important;
+  /* padding: 0.5rem !important; */
+  transition: linear !important;
+  /* width: 150px !important; */
+}
+.user{
+  font-size: 25px;
+  color: white;
+  /* margin-top: 25px; */
+}
+/* nav form input {
+  border: none;
+  border-radius: 2rem;
+  background-color: none;
+  margin-bottom: 1rem;
+  margin-left:-90px;
+  width: 12rem;
+  height: 2rem;
+  border: 0.01rem solid rgb(3, 32, 89);
+}
+nav form input:focus {
+  border: none;
+  color: rgb(0, 0, 0);
+  border-radius: 2rem;
+  transition: all 0.5s;
+  padding: 1rem;
+  outline: none;
+  box-shadow: #0066ff 0.2rem 0.1rem 0.9rem 0.1rem;
+}
+nav form input::placeholder {
+  color: #52050a;
+  opacity: 0.5;
+  padding: 0.2rem;
+} 
+.searchic {
+width: 22px;
+  margin-top: -1rem;
+  margin-left: -2rem;
+  margin-bottom: -0.3rem;
+  cursor: pointer;
+} */
+/* .enterLogin{
+  max-width: 2rem;
+  margin-left: 5rem;
+  cursor: pointer;
+
+} */
+
+

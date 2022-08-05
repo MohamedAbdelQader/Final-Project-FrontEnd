@@ -1,0 +1,23 @@
+<nav id="sidebar" class="navbar-dark bg-dark" [ngClass]="{'hidden': isHidden }">
+
+    
+      <h1 style="color: white; padding-top: 20px; margin-top: 0px;">EXTRADE</h1>
+        <div class="line"></div>
+        <p >APPLICATION</p>
+        <div class="icon"  routerLink="/user/homepage" >
+          <a class="fa fa-solid fa-house-user"></a><h5>Home</h5>
+        </div>
+
+        <div class="icon" routerLink="/marketer/profile" >
+          <a class="fa fa-solid fa-house-user"  ></a><h5>Profile</h5>
+        </div>
+        <div class="icon" [routerLink]="['/marketer/addCollection']">
+          <a class="fa fa-solid fa-cubes"></a><h5>Add Collection</h5>
+        </div>
+          <div class="icon"  [routerLink]="['/marketer/allCollection']" >
+            <a class="fa fa-solid fa-cubes"></a><h5>All Collection</h5>
+          </div>
+          <div class="icon" [routerLink]="['/marketer/wallet']">
+            <a class="fa fa-solid fa-wallet"></a><h5>Wallet</h5></div>
+     
+  </nav>

@@ -1,0 +1,57 @@
+<nav class="ournav navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a><img class="logonav" src="../../../../assets/image/x34.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ul">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Read More</a>
+        </li>
+        <li>
+        <a class="nav-link" routerLink="/user/code">Code</a></li>
+      </ul>
+      <form >
+
+        <a [routerLink]="['/user/favourite']" class="hearticon">
+          <i class="fa fa-solid fa-heart "></i>
+          <div class="badge bg-danger badge">{{totalItemfav}}</div>
+        </a>
+
+        <a [routerLink]="['/user/cart']" class="carticon">
+          <i class="fa fa-solid fa-cart-arrow-down "></i>
+          <div class="badge bg-danger badge">{{totalItemcar}}</div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle usericon" id="navbarDarkDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-solid fa-user user"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="usericon" routerLink="/user/profile">Profile</a></li>
+                <li> <a class=" usericon" (click)="logout()" routerLink="/user/login">
+                    <i class="fa fa-solid fa-arrow-right-from-bracket"></i>
+                    Logout </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</nav>

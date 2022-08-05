@@ -1,0 +1,28 @@
+<div class="container row">
+<h1>All Collection</h1>
+<div class=" mt-1 mb-1 col-5"  *ngFor="let item of list">
+  <div class="d-flex justify-content-center row">
+      <div class="col">
+          <div class="row p-2 bg-white border rounded" >
+              <div class="col-md-6 mt-1">
+                  <h5>{{item.nameEN}}</h5>
+                  <h5>{{item.nameAr}}</h5>
+                  <br>
+                  <div class="mt-1 mb-1 spec-1"><span>Code :  </span><span class="dot"></span><span>{{item.code}}</span><span class="dot"></span><span><br></span></div>
+                </div>
+                
+              <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                  <div class="d-flex flex-column mt-1">
+                    <a class="btn btn-primary btn-sm" type="button" [routerLink]="['/marketer/collectiondetails/',item.id]" style="width: 5rem;margin-top: 2rem;">
+                      Details
+                    </a>
+                    <button class="btn btn-danger btn-sm" type="button" (click)="remove(item.id,item.nameEN, item.nameAr)" style="width: 5rem;margin-top: 1rem;">
+                      Remove
+                    </button>
+                  </div>
+              </div>
+          </div>
+        </div>
+   </div>
+</div>
+</div>

@@ -1,0 +1,104 @@
+<div class="background ">
+<!-- <app-nav></app-nav>  -->
+    
+    <div class="bg-form"> 
+
+        <div class="rounded" >
+            <h1 >Sign UP</h1>
+            <form [formGroup]="signupform">
+                <div >
+                    <label for="IDFRISTNAME" > 
+                      <i class="fa fa-solid fa-user"></i><span>Name En</span></label>
+                      <label for="IDFRISTNAME" class="label" > 
+                        <i class="fa fa-solid fa-user"></i><span>Name Ar</span></label>
+                </div>
+                    <input formControlName="nameEn" type="text" name="full name" id="IDfristname"
+                        placeholder="enter your name please " required >
+                        <input formControlName="nameAr" type="text" name="full name" id="IDlastname" 
+                        placeholder="enter your name please " required >
+                        <span class="text-danger" *ngIf="!signupform.controls['nameEn'].valid && 
+                        signupform.controls['nameEn']?.touched"> Required Your Name in English</span>
+                        <span class="text-danger" *ngIf="!signupform.controls['nameAr'].valid && 
+                        signupform.controls['nameAr']?.touched"> Required Your Name in Arabic</span>
+                     
+                        <div >
+                    <label for="IDEmail" >
+                        <i class="fa fa-solid fa-at"></i> <span>Email</span></label>
+                </div>
+                    <input formControlName="email" type="email" name="Email" id="IDEmail"
+                        placeholder="enter your email please " required>
+                        <span class="text-danger" *ngIf="!signupform.controls['email'].valid && 
+                        signupform.controls['email']?.touched"> Required Your Email</span>
+                        
+                <div >
+                    <label for="IDpass" >
+                        <i class="fa fa-solid fa-lock"></i><span>Password</span></label>
+                      
+                </div>
+            
+                <input formControlName="password" type="password"  id="IDEmail" name="password"
+                placeholder="enter your password  " required>
+                <span class="text-danger" *ngIf="!signupform.controls['password'].valid && 
+                    signupform.controls['password']?.touched"> Required Your password</span>
+                    
+                                 
+                <div class="d-flex" >
+                  <label for="IDpass"  >
+                    <i class="fa fa-solid fa-globe"></i><span>Country</span></label>
+                     <label for="IDpass1"  class="city"  >
+                        <i class="fa fa-solid fa-city"></i><span>City</span></label>       
+                        <label for="IDpass1" class="city"  >
+                            <i class="fa fa-solid fa-road"></i><span>Street</span></label>    
+                </div>
+                <input formControlName="country" type="text"  id="IDcountry" name="country"
+                placeholder="country " required>
+                    <input formControlName="city" type="text" id="IDcity" name="city"
+                        placeholder="city " required>
+                        <input formControlName="street" type="text" id="IDstreet" name="street"
+                        placeholder="street " required>
+                        <span class="text-danger" *ngIf="!signupform.controls['country'].valid && 
+                        signupform.controls['country']?.touched"> Required Your country</span>
+                        <span class="text-danger" *ngIf="!signupform.controls['city'].valid && 
+                        signupform.controls['city']?.touched"> Required Your city</span>
+                        <span class="text-danger" *ngIf="!signupform.controls['street'].valid && 
+                        signupform.controls['street']?.touched"> Required Your street</span>
+                     
+                <div>
+                    <label for="IDpass" style="display: block;">
+                        <i class="fa fa-solid fa-phone"></i><span>Phone</span></label>
+                        
+                            <label for="IDphone"  class="eg-num">+20</label>
+                            <input  formControlName="phones" type="text"  id="IDphone" name="phone"
+                            placeholder="enter your phone please  " required>
+                            <span class="text-danger" *ngIf="!signupform.controls['phones'].valid && 
+                            signupform.controls['phones']?.touched"> Required Your city</span>
+                        
+                        </div>  
+                        <div>
+                            <label for="IDpass" style="display: block;">
+                                <i class="fa fa-solid fa-file-word"></i><span>Image</span></label>
+                                <input  formControlName="img" type="file"  id="IDEmail" name="texcard"
+                                placeholder="enter your img"  >
+                        </div> 
+                                
+              
+                   <div class="checkbox d-flex ">
+                        <input type="checkbox" id="CB">
+                        <p >I Agree With Privacy and Policy</p>
+                </div>
+                <div class="but-sign">
+                <button type="submit" class="btn"  (click)="signup()" >Sign up</button>
+                <!-- [disabled]="signupform.invalid" -->
+                    <span>Already have an account ?</span> 
+                    <a [routerLink]="['/login']">Log In</a>
+                 </div>
+    
+            </form>
+        </div>
+            <div>
+                <img src="/../assets/image/one.png"/>
+            </div>
+      
+       
+    </div>
+</div>

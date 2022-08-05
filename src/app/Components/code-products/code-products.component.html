@@ -1,0 +1,29 @@
+<div class="containers">
+  
+    <label class="form-controll" for="code" style="font-size: 2rem;font-weight: 700;color:black">Code :
+      <input 
+        type="text"
+        [(ngModel)]="Code"
+        class="form-control"
+        placeholder="Enter Correct Code"
+      />
+    </label>
+    <button class="btn btn-dark" (click)="Get()" >Search</button>
+
+  <div class="row text-center col-9 mt-5">
+    <div class="col-4" *ngFor="let item of productlist">
+      <div class="card">
+        <img class="card-img" src="" />
+        <!-- https://localhost:63000{{item.images[0]}} -->
+        <div class="card-body">
+          <h1>Name : {{ item.nameEn }}</h1>
+          <p>Description : {{ item.description }}</p>
+          <p>Price : {{ item.price }} $</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="" >
+<button (click)="order()" class="btn btn-dark ">Make an Order</button>
+  </div>
+</div>

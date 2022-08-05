@@ -1,0 +1,130 @@
+/* :host {
+    background: #343a40;
+  } */
+  
+  #sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 170vh;
+  color: #fff;
+  transition: all 0.3s;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  }
+  
+  #sidebar.hidden {
+    margin-left: -200px;
+  }
+  
+  a[data-toggle="collapse"] {
+    position: relative;
+  }
+  
+  @media (max-width: 575px) {
+    #sidebar {
+        margin-left: -200px;
+    }
+    #sidebar.hidden {
+        margin-left: 0;
+    }
+  }
+  
+  a, a:hover, a:focus {
+    color: inherit;
+  }
+  
+  #sidebar .sidebar-header {
+    padding: 20px;
+  }
+  
+  #sidebar ul li a {
+  padding: 15px;
+  display: block;
+  width: 100%;}
+  #sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  hr {
+  border-top: 1px solid #fff;
+  margin-top: 0;
+  }
+  #container{
+    display: flex;
+    
+
+  }
+  #welcom{
+    font-weight: 700;
+    margin-left: 30%;
+    margin-top: 20%;
+    font-size: 80px;
+    
+  }
+  .vanbar
+{
+  background-color: #163a3a;
+  height: 200vh;
+  width: 200px;
+}
+.header
+{
+  width: 100%;
+}
+
+.line
+{
+  border: 2px solid white;
+
+}
+p{
+  letter-spacing: 6px;
+  color: rgb(21, 196, 202);
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.icon
+{
+margin-left: 25px;
+margin-top: 30px;
+font-size: 0.8rem;
+height: 44px;
+margin-bottom: 4px;
+border-radius: 5px;
+color: white;
+
+display: flex;
+}
+i{
+  margin-top: 6px;
+}
+h5{
+  margin-left: 5px;
+}
+.icon
+{
+    line-height: 1.2em;
+  color: #0000;
+  text-shadow: 
+    0 0 white, 
+    0 1.2em #182525;
+  overflow: hidden;
+  transition: .3s;
+}
+.icon :hover
+{
+  text-shadow: 
+    0 -1.2em #000, 
+    0 0 #1095c1;
+      
+}
+#text{
+  color: aqua;
+  font-weight: 800;
+  
+}
+#home{
+  color: white;
+}
+  

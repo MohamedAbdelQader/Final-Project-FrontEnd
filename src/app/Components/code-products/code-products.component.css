@@ -1,0 +1,9 @@
+.containers{
+    /* margin: auto; */
+    padding-top: 7rem;
+    background-image: url(../../../assets/image/ecommerce-guide.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}

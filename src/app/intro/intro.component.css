@@ -1,0 +1,40 @@
+  /* Secion 4 */
+  .section4 {
+    margin-top: 5rem;
+    margin-left: 3rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+  .section4 img {
+    width: 700px;
+  }
+
+  .section4 button {
+    border-style: none;
+    background-color: #3840f7;
+    border: 0.2rem solid #3840f7;
+    padding: 0.8rem;
+    color: white;
+    transition: linear;
+    cursor: pointer;
+    margin-top: 3rem;
+    font-size: 1rem;
+    /* font-family: "Courier New", Courier, monospace; */
+    margin-right: 2rem;
+    border-radius: 1rem;
+  }
+
+  .section4 button:hover {
+    border: 0.2rem solid #3840f7;
+    background-color: white;
+    color: #52050a;
+    transition: all 0.2;
+  }
+  .section4 .usersign {
+    margin-left: 15rem;
+  }
+
+  .section4 .marketersign {
+    margin-left: 35rem;
+  }

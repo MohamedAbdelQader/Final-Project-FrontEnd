@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <!-- <p> Order # {{details[0].orderID}}</p> -->
+            <p style="text-align: center; font-size:2rem "> Total Price :{{details[0].totalPrice}}$</p>
+        </div>
+    </div>
+    <div class="row text-center col-12 mt-5">
+        <div class="col-12" *ngFor="let item of details">
+            <div style="text-align: center; font-size: 5rem;">
+                <p>Order Done Succesfully</p>
+                <!-- <img class="card-img" src="" />
+                
+                <div class="card-body">
+                    <h1>{{ item.nameEn }}</h1>
+                    <p>{{ item.productQuantity }}</p>
+                    <p>{{ item.subPrice }}$</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

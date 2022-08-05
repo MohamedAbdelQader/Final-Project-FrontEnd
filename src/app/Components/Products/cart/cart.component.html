@@ -1,0 +1,84 @@
+<!-- <app-header></app-header> -->
+<ng-container *ngIf="products.length >0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+              <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Product name</th>
+                        <th>Product image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of products , let i=index">
+                         <td>{{i+1}}</td>
+                         <td>{{item.nameEn}}</td>
+                         <td><img style="width: 120px;" src="https://localhost:63000{{item.images}}"/></td>
+                         <td style="width:25%;">{{item.description}}</td>
+                         <td style="width:12%;">{{item.price}}</td>
+                         <!-- <td style="width:12%;">{{item.quantity}}</td> -->
+                         <td><form>
+                            <button class="value-button" id="decrease" (click)="decreaseValue(item.quantity,item.id,item.productID)" 
+                             value="Decrease Value"><h5 >-</h5></button>
+                            <span id="number">{{item.quantity}}</span>
+                            <button class="value-button" id="increase" (click)="increaseValue(item.quantity,item.id,item.productID)"
+                             value="Increase Value"><h5>+</h5></button>
+                          </form></td>
+                         <td style="width:12%;">{{item.quantity*item.price}}</td> 
+                         <td>
+                            <button (click)="removeitem(item.id)" class="btn btn-danger remove"><i class="fas fa-trash-alt"></i></button>
+                         </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td><button (click)="emptycart()" class="btn btn-danger">Empty Cart</button></td>
+                        <td><button routerLink="/user/product-list" class="btn btn-primary">Shoping More</button></td>
+                        <td><button class="btn btn-success" (click)="order()">Checkout</button></td>
+                        <td ><strong>Grand Total : ${{grandTotal()}}</strong></td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
+    </div>
+ 
+</ng-container>
+
+
+
+<div *ngIf="products.length <= 0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="/../assets/image/Screenshot 2022-08-01 142557.png" alt=""/>
+            <h4>Your Card Is Empty</h4>
+            <h6>Add Item to it now</h6>
+
+            <a routerLink="/user/product-list"
+               class="btn color">Shopping Now
+            </a>
+         
+        </div>
+    </div>
+    
+</div>
+
+<div class="alert alert-success" role="alert" *ngIf="orderDone">
+    <h4 class="alert-heading">Well done!</h4>
+    <p>Aww yeah, you successfully create an Order.</p>
+    <hr>
+    <a routerLink="/user/product-list"
+               class="btn color">Shopping Now
+            </a>
+    <!-- <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p> -->
+</div>

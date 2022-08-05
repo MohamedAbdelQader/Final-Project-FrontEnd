@@ -1,0 +1,187 @@
+body {
+    background: rgb(99, 39, 120)
+}
+.section1{
+    background-color: #868286;
+    width: 800px;
+    margin-left: 20%;
+
+}
+.image
+{
+    margin-top: -90px;
+    margin-left: 15rem;
+}
+form{
+    margin-top: -60px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+
+/* .section1{
+  
+  background-image: linear-gradient(to right, rgba(174, 77, 234, 0), rgb(48, 236, 158));
+  height: 750px;
+
+}
+.section2{
+    width: 900px;
+    margin-left: 290px;
+    height: 700px;
+    background-color: white;
+    box-shadow: 5px 10px lightblue;
+}
+
+form
+{
+    margin-left: 2rem;
+}
+div h1
+{
+    color:rgb(6, 72, 57);
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 20px;
+}
+form div
+{
+    margin-top: 0.5rem;
+   
+}
+
+span
+{
+    
+    margin-left: 0.5rem;
+    font-weight: 900;
+}
+.label
+{
+    margin-left: 17rem;
+   font-weight: 900;
+
+}
+
+form input
+{
+    margin-top: 1rem;
+    height: 2rem;
+    outline: none;
+    background: none;
+     border: 0.1rem solid black; 
+    border-radius:2rem;
+     padding-left: 0.5rem;
+     width: 17rem;
+    
+}
+ ::placeholder
+ {
+     
+     padding-left: 0.1rem;
+ }
+#IDlastname ,#IDpass1
+{
+    margin-left: 5rem;
+    background: none;
+    border: 0.1rem solid black;
+}
+#IDEmail 
+{
+    width:  39rem;
+    background: none;
+    border: 0.1rem solid black;
+}
+#IDcountry 
+{
+    width: 12.5rem;
+}
+#IDcity ,#IDstreet
+{
+    width: 12.5rem;
+    margin-left: 15px;
+}
+#IDphone
+{
+    width: 37rem;
+    background: none;
+    border-radius:0 2rem  2rem 0 ;
+    border: 0.1rem solid black;
+    margin-left: -0.2rem;
+}
+.eg-num
+{
+    
+    font-weight: bold;
+    border-right: none;
+    margin-bottom: 1rem  ;
+    border-radius:2rem 0  0 2rem ;
+    border: 0.1rem solid black;
+    padding: 0.11rem;
+    border-right:none ;
+    
+}
+.city 
+{
+    margin-left: 9rem;
+}
+
+div form img
+{
+    width: 2rem;
+ 
+}
+.checkbox input
+{
+   
+margin-top: 0px;
+width: 15px;
+}
+.checkbox p
+{
+    margin-left: 0.5rem;
+    font-weight: 900;
+
+}
+.btns
+{
+    margin-left: 0.5rem;
+} */

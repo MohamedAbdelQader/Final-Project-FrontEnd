@@ -1,0 +1,99 @@
+.background
+{
+    margin: 0;
+    padding: 0;
+     height: 47rem; 
+    /* height: 100%; */
+    background-color:rgb(98, 175, 231);
+    background-image: linear-gradient(to bottom right,rgb(11, 74, 45) , rgb(130, 238, 244));
+    display: flex;
+}
+
+.bg-form
+{
+   background-color: aliceblue;
+   height: 40rem;
+   width: 88rem;
+   margin-top: 3rem;
+   margin-left: 4rem;
+   display: flex; 
+
+
+}
+.rounded
+{
+    width: 45rem;
+    height: 40rem;
+    
+}
+form
+{
+    margin-left: 10rem;
+}
+div h1
+{
+    color:rgb(6, 72, 57);
+    margin-left: 10rem;
+    margin-top: 8rem;
+}
+form div
+{
+    margin-top: 2rem;
+   
+}
+span
+{
+    
+    margin-left: 0.5rem;
+    font-weight: 900;
+}
+.label
+{
+    margin-left: 6.4rem;
+   font-weight: 900;
+
+}
+
+form input
+{
+    margin-top: 1rem;
+    height: 2rem;
+    outline: none;
+    background: none;
+    border: 0.1rem solid black;
+    border-radius:2rem;
+   
+    padding-left: 0.5rem;
+  
+    
+}
+ ::placeholder
+ {
+     
+     padding-left: 0.1rem;
+ }
+ #IDEmail 
+{
+    width:  25rem;
+    background: none;
+    border: 0.1rem solid black;
+}
+.but-sign
+{
+    margin-top: 5rem;
+}
+
+.but-sign a
+{
+    color:rgb(224, 73, 73);
+    margin-left: 1rem;
+}
+div img
+{
+    margin-top: 0rem;
+    width: 45rem;
+    height: 35rem;
+    margin-left: 7.4rem;
+    border-bottom-left-radius: 5rem; 
+
+}

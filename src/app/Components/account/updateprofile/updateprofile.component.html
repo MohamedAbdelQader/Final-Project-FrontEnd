@@ -1,0 +1,158 @@
+<div class="container rounded bg-white mt-5 mb-5">
+    <div class="row section1">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5 image">
+                <img class="rounded-circle mt-5 " width="150px" 
+                src="../../../../assets/image/user.png"><span class="font-weight-bold">{{oldData.userName}}</span>
+                <span class="text-black-50">{{oldData.email}}</span><span> </span>
+            </div>
+        </div>
+        <form [formGroup]="updateform">
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h4 class="text-right">Profile Settings</h4>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-md-6"><label class="labels">Name EN</label>
+                        <input type="text" class="form-control" formControlName="nameEn"></div>
+                    <div class="col-md-6"><label class="labels">Name Er</label>
+                        <input type="text" class="form-control" formControlName="nameAr" ></div>
+                        <input type="hidden" formControlName="id">
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-12"><label class="labels">Email </label>
+                        <input type="text" class="form-control" formControlName="email"></div>
+                    <div class="col-md-12"><label class="labels">Password </label>
+                        <input type="text" class="form-control"formControlName="password"></div>
+                    <div class="col-md-12"><label class="labels">Mobile Number</label>
+                        <input type="text" class="form-control" formControlName="phone"></div>
+                    <div class="col-md-12"><label class="labels">Country</label>
+                        <input type="text" class="form-control"  formControlName="country"></div>
+                    <div class="col-md-12"><label class="labels">City</label>
+                        <input type="text" class="form-control"  formControlName="city"></div>
+                    <div class="col-md-12"><label class="labels">Street</label>
+                        <input type="text" class="form-control"  formControlName="street"></div>
+                   
+                </div>
+                <div class="mt-5 text-center" (click)="edit()">
+                    <button class="btn btn-primary profile-button" type="button">Save Profile</button>
+                </div>
+            </div>
+        </div>
+    </form>
+       
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="section1">
+        <div class="section2">
+            <form [formGroup]="updateform">
+                <img src=""/>
+                <h1 >Update</h1>
+                <form [formGroup]="updateform">
+                    <div >
+                        <label for="IDFRISTNAME" > 
+                          <i class="fa fa-solid fa-user"></i><span>Name En</span></label>
+                          <label for="IDFRISTNAME" class="label" > 
+                            <i class="fa fa-solid fa-user"></i><span>Name Ar</span></label>
+                    </div>
+                        <input formControlName="nameEn" type="text" name="full name" id="IDfristname"
+                            placeholder="enter your name please " required value="{{userdetails.NameEn}}">
+                            <input formControlName="nameAr" type="text" name="full name" id="IDlastname" 
+                            placeholder="enter your name please " required  value="{{userdetails.NameAr}}" >
+                    <div >
+                        <label for="IDEmail" >
+                            <i class="fa fa-solid fa-at"></i> <span>Email</span></label>
+                    </div>
+                        <input formControlName="email" type="email" name="Email" id="IDEmail"
+                            placeholder="enter your email please " required value="{{userdetails.Email}}">
+                        
+                    <div>
+                        <label for="IDpass" >
+                            <i class="fa fa-solid fa-lock"></i><span>Password</span></label>
+                          
+                    </div>
+                
+                    <input formControlName="password" type="password"  id="IDEmail" name="password"
+                    placeholder="enter your password  " required value="{{userdetails.Password}}">          
+                    <div class="d-flex" >
+                      <label for="IDpass"  >
+                        <i class="fa fa-solid fa-globe"></i><span>Country</span></label>
+                         <label for="IDpass1"  class="city"  >
+                            <i class="fa fa-solid fa-city"></i><span>City</span></label>       
+                            <label for="IDpass1" class="city"  >
+                                <i class="fa fa-solid fa-road"></i><span>Street</span></label>    
+                    </div>
+                    <input formControlName="country" type="text"  id="IDcountry" name="country"
+                    placeholder="country " required value="{{userdetails.Country}}">
+                        <input formControlName="city" type="text" id="IDcity" name="city"
+                            placeholder="city " required value="{{userdetails.City}}">
+                            <input formControlName="street" type="text" id="IDstreet" name="street"
+                            placeholder="street " required value="{{userdetails.street}}">
+                    <div>
+                        <label for="IDpass" style="display: block;">
+                            <i class="fa fa-solid fa-phone"></i><span>Phone</span></label>
+                            
+                                <label for="IDphone"  class="eg-num">+20</label>
+                                <input  formControlName="phones" type="text"  id="IDphone" name="phone"
+                                placeholder="enter your phone please  " required value="{{userdetails.phone}}">
+
+                    </div>  
+                    <button type="submit" class="btn btn-primary"  (click)="edit()" >Update</button>
+                    <button type="submit" class="btn btn-primary btns"  >Cancle</button>
+
+            </form>
+    
+       -->
+    
+   
+

@@ -1,0 +1,112 @@
+.card
+{
+    height: 700px;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 5px 5px 3px lightblue;
+}
+.center
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.center img
+{
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 400px;
+    width: 600px;
+    margin: 20px 0px;
+}
+.card-table
+{ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: none;
+  word-wrap: break-word;
+  background-color: white;
+  background-clip: border-box;
+  border: 1px solid rgba((0,0,0,0.2));
+  border-radius: 0.25rem;
+}
+.center .btn
+{
+    font-size: 14px !important;
+    margin-top: 20px !important;
+    font-weight: 400;
+    padding: 12px 72px;
+    border-radius: 3px !important;
+    background-color:  #52050A;
+    color: white;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  margin-top: -50px;
+  margin-left: -120px;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: rgb(37, 137, 199);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -1px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -1px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+form h5{
+  margin-top: -15px;
+  color: #ddd;
+} 

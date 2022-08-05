@@ -1,0 +1,64 @@
+
+<div *ngIf="products.length !=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+              <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Product name</th>
+                        <th>Product image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                       
+                       
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of products , let i=index">
+                         <td>{{i+1}}</td>
+                         <td>{{item.nameEn}}</td>
+                         <td><img style="width: 120px;" src="https://localhost:63000{{item.image}}"/></td>
+                         <td style="width:25%;">{{item.description}}</td>
+                         <td style="width:12%;">{{item.price}}</td>
+                    
+                         <td>
+                            <button (click)="removeitem(item.id)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            <a [routerLink]="['/user/product-details',item.id]">
+                                <button class="btn btn-primary">See Detalis</button></a>
+                         </td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td><a routerLink='/user/product-list' class="btn btn-primary">see more products</a>
+                            
+                        
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+         </div>
+    </div>
+ 
+</div>
+
+
+
+<div *ngIf="products.length ==0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Favourite</h5>
+        </div>
+        <div class="center">
+            <img src="/../assets/image/online-shopping-freepik-1646920907.jpg" alt=""/>
+            <h4>Your Favourite Is Empty</h4>
+            <h6>Add Item to see it again</h6>
+            <a class="btn color" [routerLink]="['/user/product-list']">See More Proudect</a>
+            <!-- [routerLink]="['/product-list']" -->
+        </div>
+    </div>
+    
+</div>

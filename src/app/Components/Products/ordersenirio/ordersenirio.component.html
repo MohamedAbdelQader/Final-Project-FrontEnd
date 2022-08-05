@@ -1,0 +1,26 @@
+<table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Product name</th>
+                        <th>Product image</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+    <tbody>
+        <tbody>
+            <tr *ngFor="let item of products , let i=index">
+                 <td>{{i+1}}</td>
+                 <td>{{item.OrderID}}</td>
+                 <td>{{item.ProductID}}"/></td>
+                 <td >{{item.ProductQuantity}}</td>
+                 <td >{{item.SubPrice}}</td>
+              
+                
+            </tr>
+    </tbody>
+  </table>
